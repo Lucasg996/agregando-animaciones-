@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: grid;
+    
+    grid-template-rows: 0.1fr 0.5fr 0.3fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header header header header "
+                          "main main main main"
+                          "footer footer footer footer ";
+
+
+}
+
+header{
+    grid-area: header; 
+    background-color: black;
+    display: flex;
+    justify-content: start;
+    flex-direction: row-reverse;
+    align-items: center;    
+    margin-bottom: 2px;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+main{
+    grid-area: main;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style-type: none;
+
+}
+
+body{
+    background-color: black;
+}
+
+nav ul li{
+    font-size: 1.3rem;
+    padding: 10px 20px 0px 20px;
+    margin: 10px 20px 0px 20px;
+    font-family: 'Rubik', sans-serif;
+    
+}
+nav ul li a:hover{
+color:rgb(196, 194, 194);
+
+}
+
+
+
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li{
+    list-style-type: none;
+    font-size: 18px;
+    margin: 30px;
+    padding: 20px;
+    font-family: 'Rubik', sans-serif;
+   
+}
+
+footer ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color:rgb(179, 176, 176);
+}
+
+footer{
+    grid-area: footer;
+    margin: 20px;
+    padding: 10px;
+}
+
+h1{
+    margin: 10px;
+    padding: 10px;
+    color:#c2c052;
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+       
+
+}
+
+h2{
+    color: #c2c052;
+    margin: 20px;
+    padding: 20px 10px 10px 1px ;  
+    font-family: 'Rubik', sans-serif;
+
+
+}
+      
+.fotoPrincipal img{
+
+    width: 100%;
+    filter: blur(1px) grayscale(.9);
+}
+
+
+.fotoPrincipal img:hover{
+    filter: none;
+}
+
+    
+main div h3{
+    font-size: 20px;
+    color: #c2c052;
+    margin: 20px;
+    padding: 20px 10px 10px 1px;    
+    font-family: 'Rubik', sans-serif;
+}
+ h3{
+    font-size: 15px;
+    color: whitesmoke;
+    margin: 20px;
+    padding: 20px 10px 10px 1px;    
+    font-family: 'Rubik', sans-serif;
+}
+
+main div h4{
+    font-size: 20px;
+    color: #c2c052;
+    margin: 20px;
+    padding: 20px 10px 10px 1px;
+    font-family: 'Rubik', sans-serif;
+    
+}
+ h4{
+    font-size: 15px;
+    color: whitesmoke   ;
+    margin: 20px;
+    padding: 20px 10px 10px 1px;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+.divLogo{
+    margin: 20px;
+    padding: 10px;
+}
+
+p{
+    color: whitesmoke;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.mainArtistas{
+grid-area: main;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+.divVideos{
+    margin: 10px;
+    padding: 10px;
+}
+
+.divNosotros{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+main div h6{
+    font-size: 20px;
+    color: #c2c052;
+    margin: 20px;
+    padding: 20px 10px 10px 1px;
+    font-family: 'Rubik', sans-serif;  
+}
+h5{
+   font-size: 20px;
+   color: #c2c052;
+   margin: 20px;
+   padding: 20px 10px 10px 1px;
+   font-family: 'Rubik', sans-serif;
+   }   
+h6{
+    font-size: 15px;
+    color: whitesmoke;
+    margin: 20px;
+    padding: 20px 10px 10px 1px;
+    font-family: 'Rubik', sans-serif; 
+}
+.divNosotros ul li{
+    list-style-type:none;
+    margin: 10px;
+    padding: 10px;
+    color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+}
+
+form fieldset legend{
+    margin: 20px;
+    color: #c2c052;
+    font-size: 22px;
+}
+
+form fieldset div{
+
+    margin: 20px;
+    color: whitesmoke;
+}
+
+form fieldset div input{
+    margin: 10px;
+}
+
+form fieldset div label{
+    font-size: 18px;
+    color: #c2c052;
+}
+.tituloForm{
+    margin: 20px;
+}
+
+.mainFotos{
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+
+.mainFotos div img{
+width: 400px;
+height: 200px;
+filter: blur(1px) ;
+transition: 0.5s;
+}
+.mainFotos div img:hover{
+transform: scale(1);
+width: 500px;
+height: 250px;
+filter: none;
+}
+
+.h2Fotos{
+margin: 40px;
+}
+
+/* media querys */
+
+@media screen and (max-width: 1023px){
+
+
+.menu{
+    font-size: 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "home"
+                         "somosNosotros"
+                         "fotos"
+                         "artistas"
+                         "contacto";
+    justify-items: start;
+}
+header{
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+.home{
+  grid-area: home
+}
+.somosNosotros{
+    grid-area: somosNosotros;
+}
+.fotos{
+    grid-area: fotos;
+}
+.artistas{
+    grid-area: artistas;
+}
+.contacto{
+    grid-area: contacto;
+}
+
+footer ul li{
+
+    padding: 2px;
+
+}
+
+.mainArtistas{
+    display: flex;
+    justify-content: center;
+}
+}
