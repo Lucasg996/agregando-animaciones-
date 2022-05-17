@@ -276,16 +276,6 @@ margin: 40px;
     transition: .5s;
 }
 
-.navMenu{
-    width: 5%;
-    float: right;
-    cursor: pointer;
-    display: none;
-}
-
-#check{
-    display: none;
-}
 /* media querys */
 
 @media screen and (max-width: 1023px){
@@ -336,47 +326,7 @@ header{
 
 @media screen and (max-width: 600px){
     
-    .menu{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 150px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    .menu li{
-        display: block;
-    
-    }
-    .menu li a:hover, li a.active{
-        background: none;
-        color: red;
-    }
-    .menu li a{
-        font-size: 15px;
-    }
-    #check:checked ~ ul{
-        left:0;
-    }
-    
-    .navMenu{
-        display: block;
-        width:10%;
-    
-    }
-    
-    nav ul li{
-        display: inline-block;
-        line-height: 80px;
-    }
-    nav ul li a{
-        color: #fff;
-        font-size: 18px;
-        border-radius: 3px;
-        text-transform: uppercase;
-    }
+
     footer ul li a img{
         width: 30%;
     }
