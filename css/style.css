@@ -3,10 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+.nav-menu {
+  background-color: whitesmoke;
+  width: 100%;
+}
+h1{
+    color:#88862f;
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;
+}
+.nav-li a{
+    color: black;   
+}
 
 .contenedor{
     display: grid;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "header header header header "
                           "main main main main"
@@ -17,12 +29,7 @@
 
 header{
     grid-area: header; 
-    background-color: black;
-    display: flex;
-    justify-content: start;
-    flex-direction: row-reverse;
-    align-items: center;    
-    margin-bottom: 2px;
+    background-color: whitesmoke; 
     z-index: 1;
     position: sticky;
     top: 0;
@@ -32,34 +39,15 @@ main{
     grid-area: main;
 }
 
-.menu{
-    display: flex;
-    list-style-type: none;
-
-}
-
 body{
-    background-color: black;
+    background-color: whitesmoke;
 }
 
-.menu li{
-    font-size: 1.1rem;
-    padding: 10px 20px 0px 20px;
+.nav-li{
+    font-size: 1rem;
+    padding: 10px 10px 0px 10px;
     margin: 10px 20px 0px 20px;
-    font-family: 'Rubik', sans-serif;
-    
-}
-.menu li a:hover{
-color:rgb(196, 194, 194);
-
-}
-
-
-
-.menu li a{
-    color: whitesmoke;
-    text-decoration: none;
-
+    font-family: 'Rubik', sans-serif;  
 }
 
 footer ul{
@@ -93,18 +81,16 @@ footer{
     padding: 10px;
 }
 
-h1{
-    margin: 10px;
-    padding: 10px;
-    color:#c2c052;
+.titulo-ddr{
+    color:#85830a;
     font-size: 3rem;
     font-family: 'Bebas Neue', cursive;
        
 
 }
 
-h2{
-    color: #c2c052;
+.nosotros{
+    color: black;
     margin: 20px;
     padding: 20px 10px 10px 1px ; 
     font-size: 1.4rem;
@@ -112,123 +98,75 @@ h2{
 
 }
       
-.fotoPrincipal img{
-
-    width: 100%;
-    filter: blur(1px) grayscale(.9);
-}
-
-
-.fotoPrincipal img:hover{
-    filter: none;
+.img-carrousel{
+  height: 100%;
+  width:100%;
 }
 
     
-main div h3{
-    font-size: 1rem;
-    color: #c2c052;
-    margin: 20px;
-    padding: 20px 10px 10px 1px;    
-    font-family: 'Rubik', sans-serif;
-}
- h3{
+.derechos{
     font-size: 0.8rem;
-    color: whitesmoke;
-    margin: 20px;
+    color: black;
     padding: 20px 10px 10px 1px;    
     font-family: 'Rubik', sans-serif;
 }
 
-main div h4{
-    font-size: 1rem;
-    color: #c2c052;
-    margin: 20px;
-    padding: 20px 10px 10px 1px;
-    font-family: 'Rubik', sans-serif;
-    
-}
- h4{
-    font-size: 0.8rem;
-    color: whitesmoke   ;
-    margin: 20px;
-    padding: 20px 10px 10px 1px;
-    font-family: 'Rubik', sans-serif;
-    
-}
 
-.divLogo{
+.div-logo{
     margin: 20px;
     padding: 10px;
 }
+.titulo-equipamiento{
+    color: black;
+    font-size: 1.4rem;
+    font-family: 'Rubik', sans-serif;   
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.h-equipamiento{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 1.4rem;
+    font-family: 'Rubik', sans-serif;
+}
 
+.ul-equipamiento li{
+    list-style-type:none;
+    font-size: 0.9rem;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+}
 p{
     font-size: 0.9rem;
-    color: whitesmoke;
-    margin: 10px;
-    padding: 10px;
+    color: black;
     font-family: 'Rubik', sans-serif;
+    margin: 1rem;
 }
-
-.mainArtistas{
-grid-area: main;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-
-}
-
-.divVideos{
-    margin: 10px;
-    padding: 10px;
-}
-
-.sobreNosotros{
-    font-size: 1.5rem;
-}
-
-.divNosotros{
+.main-equipamiento{
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    align-items: center;
 }
 
 
-
-main div h6{
-    font-size:1rem;
-    color: #c2c052;
+.titulo-form{
+    color: black;
     margin: 20px;
-    padding: 20px 10px 10px 1px;
-    font-family: 'Rubik', sans-serif;  
-}
-h5{
-   font-size: 1rem;
-   color: #c2c052;
-   margin: 20px;
-   padding: 20px 10px 10px 1px;
-   font-family: 'Rubik', sans-serif;
-   }   
-h6{
-    font-size: 0.8rem;
-    color: whitesmoke;
-    margin: 20px;
-    padding: 20px 10px 10px 1px;
-    font-family: 'Rubik', sans-serif; 
-}
-.divNosotros ul li{
-    font-size: 0.9rem;
-    list-style-type:none;
-    margin: 10px;
-    padding: 10px;
-    color: whitesmoke;
+    padding: 20px 10px 10px 1px ; 
+    font-size: 1.4rem;
     font-family: 'Rubik', sans-serif;
+    text-align: center;
 }
-
+form{
+    display: flex;
+    justify-content: center;
+}
 form fieldset legend{
     margin: 20px;
-    color: #c2c052;
-    font-size: 22px;
+    color:black;
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
 }
 
 form fieldset div{
@@ -242,12 +180,14 @@ form fieldset div input{
 }
 
 form fieldset div label{
-    font-size: 18px;
-    color: #c2c052;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Rubik', sans-serif;
 }
 
-.mainFotos{
+.main-fotos{
     grid-area: main;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -255,134 +195,49 @@ form fieldset div label{
    
 }
 
-.mainFotos div img{
+.box img{
 width: 400px;
-height: 200px;
-filter: blur(1px) ;
-transition: 0.5s;
-}
-.mainFotos div img:hover{
-transform: scale(1);
-width: 500px;
-height: 250px;
-filter: none;
+height: 300px;
+object-fit: cover;
+margin-top: 30px;
+
 }
 
-.h2Fotos{
-margin: 40px;
-}
-.menu li a:hover{
-    background: #000090;
-    transition: .5s;
+
+.album h2{
+    color: #727011;
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 20px;
 }
 
-.navMenu{
-    width: 5%;
-    float: right;
-    cursor: pointer;
-    display: none;
-}
-
-#check{
-    display: none;
-}
 /* media querys */
 
 @media screen and (max-width: 1023px){
 
-.fotoPrincipal img{
-    filter: none;
+
+.derechos{
+    display: none;
 }
-.mainFotos div img{
-    filter: none;
-}
- .menu{
-    display: grid;
-    grid-template-areas: "home"
-                         "somosNosotros"
-                         "fotos"
-                         "artistas"
-                         "contacto";
 
 }
-header{
-        display: flex;
-        justify-content: space-around;
-    }
-
-
-.home{
-  grid-area: home
-}
-.somosNosotros{
-    grid-area: somosNosotros;
-}
-.fotos{
-    grid-area: fotos;
-}
-.artistas{
-    grid-area: artistas;
-}
-.contacto{
-    grid-area: contacto;
-}
-
-
-.mainArtistas{
-    display: flex;
-    justify-content: center;
-}
-}
-
 @media screen and (max-width: 600px){
     
-    .menu{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 150px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    .menu li{
-        display: block;
-    
-    }
-    .menu li a:hover, li a.active{
-        background: none;
-        color: red;
-    }
-    .menu li a{
-        font-size: 15px;
-    }
-    #check:checked ~ ul{
-        left:0;
-    }
-    
-    .navMenu{
-        display: block;
-        width:10%;
-    
-    }
-    
-    nav ul li{
-        display: inline-block;
-        line-height: 80px;
-    }
-    nav ul li a{
-        color: #fff;
-        font-size: 18px;
-        border-radius: 3px;
-        text-transform: uppercase;
-    }
     footer ul li a img{
-        width: 30%;
+        width: 35%;
     }
 
     footer ul li{
     
         padding: 2px;
     }
+
+    .derechos{
+        display: none;
+    }
 }
+@media screen and (max-width: 700px){
+footer ul li a img{
+    width: 35%;
+}}

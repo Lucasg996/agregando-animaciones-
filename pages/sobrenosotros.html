@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de css bootstrap -->
+     <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- link de mi css -->
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700;1,900&family=Rubik:ital,wght@1,700&display=swap" rel="stylesheet">
@@ -17,149 +20,82 @@
 </head>
 <body>
     <div class="contenedor">
-    <header>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <img src="../img/menu.png" class="navMenu">
-            </label>
-            <ul class="menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
-                <li> <a href="fotos.html">Fotos</a></li>
-                <li><a href="artistas.html">Artistas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <h1>
-            DDR Recordings
-        </h1>
-    </header>
-
-    <main>
-        <div class="divLogo">
-            <img src="../img/logo.jpg" alt="logo">
-        </div>
-        
-        <h2>
-            Sobre Nosotros
-        </h2>
-
-
-       <div class="divNosotros"> <p>
-            Por mística rockera, tecnología de punta, épica familiar y política de precios, DDR Recordings significa un antes y un después en la zona sur del Gran Buenos Aires, reposicionándola en el mapamundi musical a la altura de su electrificante historia.
-            Ubicado en una encantadora esquina en los límites entre Mármol y Adrogué, DDR Recordings tiene todo lo que un estudio de grabación necesita para que un grupo suene como tienen que sonar, y más: una amplia sala de levitante ambiente y espectacular acústica, una imponente consola API 1608 rodeada de una selección de procesadores de primera linea y espacios al aire libre y bajo techo en la que los músicos pueden descansar los oídos y reponer energías.
-            Concebida e impulsada por Bárbara Zampini, tras varios años de gestación, diseño y construcción, sale a las pistas con aires de nave espacial providencialmente aterrizada. El responsable de su puesta a punto y gestión es Marcelo Belén, experimentado y reconocido drum tech y técnico de grabación, además de legendario baterista del postpunk sureño.</p> 
-            <h2>Equipamiento</h2>
-            <h3>Consola de grabación</h3>
-           <p>
-             <ul>
-               <li>API 1608 Recording Mixer</li>
-               <li>12 equalizadores 550 A</li>
-               <li>4 equalizadores 560</li>
-               <li>2 compresores 527</li>
-               <li>lynxs studio/lt hd slot expansion card</li>
-               <li>lynx studio/aurora 16</li>
-               <li>linx studio/aurora 8</li>
-               <li>Digidesign/HD2 (pro tools HD 9)</li>
-               <li>maudio/MIDI sport 2x2</li>
-               <li>Apple Mac Pro Quad (computadora)</li>
-               <li>Radial Engineering JDI (cajas directas)</li>
-               <li>Focal TWIN6 Be (monitores de audio)</li>
-               <li>Yamaha ns 10</li>
-             </ul>
-        </p> 
-          <h4>Procesadores</h4>
-           <p>
-               <ul>
-                   <li>2 preamp neve 1073 (preamplificador de microfono)</li>
-                   <li>6 preamp telefunken (preamplificador de microfono)</li>
-                   <li>Crane Song Ibis (equalizador estereo)</li>
-                   <li>Crane Song STC-8 (discrete class A compressor limiter)</li>
-                   <li>Pendulum OCL-2 (compresor estereo)</li>
-                   <li>Universal Audio LA-2A (compresor)</li>
-                   <li>Purple Audio MC-77 (compresor)</li>
-                   <li>Lexicon pcm 96 (procesador de efectos)</li>
-               </ul>
-            </p>   
-        <h5>Monitoreo de sala</h5>
-           <p>
-               <ul>
-                   <li>Furman HR-6</li>
-                   <li>Furman HDS-6</li>
-               </ul>
-           </p> 
-            
-    
-           <h6>Micrófonos</h6>
-           <p>
-               <ul>
-                   <li>2 neumann skm - 84MT</li>
-                   <li>2 neumann u 87</li>
-                   <li>2 coles 4038</li>
-                   <li>1 Wunder CM7 gt (m7 capsule)</li>
-                   <li>2 Beyer dynamic MC 930</li>
-                   <li>1 Electrovoice r 20</li>
-                   <li>3 Sennheiser MD 421</li>
-                   <li>1 AKG D112</li>
-                   <li>4 shure SM -57</li>
-               </ul>
-        
-            
+        <header>
+            <nav class="navbar navbar-expand-lg nav-menu">
+                <div class="container-fluid">
+                  <a class="navbar-brand titulo-nav titulo-ddr" href="../index.html"><h1>DDR Recordings</h1></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse nav-div" id="navbarNav">
+                    <ul class="navbar-nav nav-ul ">
+                      <li class="nav-item nav-li">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item nav-li">
+                        <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+                      </li>
+                      <li class="nav-item nav-li">
+                        <a class="nav-link" href="fotos.html">Equipamiento</a>
+                      </li>
+                      <li class="nav-item nav-li">
+                        <a class="nav-link" href="artistas.html">Discos grabados</a>
+                      </li>  
+                       <li class="nav-item nav-li">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+          <main>
+            <div class="div-logo">
+                <img src="../img/logo.jpg" alt="logo">
+            </div>
+            <h2 class="nosotros">
+                Sobre Nosotros
+            </h2>
+            <div class="div-nosotros"> 
+              <p>
+                Por mística rockera, tecnología de punta, épica familiar y política de precios, DDR Recordings significa un antes y un después en la zona sur del Gran Buenos Aires, reposicionándola en el mapamundi musical a la altura de su electrificante historia.
+                Ubicado en una encantadora esquina en los límites entre Mármol y Adrogué, DDR Recordings tiene todo lo que un estudio de grabación necesita para que un grupo suene como tienen que sonar, y más: una amplia sala de levitante ambiente y espectacular acústica, una imponente consola API 1608 rodeada de una selección de procesadores de primera linea y espacios al aire libre y bajo techo en la que los músicos pueden descansar los oídos y reponer energías.
+                Concebida e impulsada por Bárbara Zampini, tras varios años de gestación, diseño y construcción, sale a las pistas con aires de nave espacial providencialmente aterrizada. El responsable de su puesta a punto y gestión es Marcelo Belén, experimentado y reconocido drum tech y técnico de grabación, además de legendario baterista del postpunk sureño.</p> 
               
-        </p> 
-            <h6>Auriculares</h6>
-           <p>
-               <ul>
-                   <li>SONY mdr 7506</li>
-                   <li>AKG K141 Mk II</li>
-               </ul>
-        
-          </p> 
-           <h6>Back Line</h6> 
-           <p
-           >En función de las necesidades del grupo, podemos facilitar una amplia variedad de amplificadores e instrumentos clásicos.
-          </p> 
-            <h6>Alojamiento</h6>
-          <p> 
-           El estudio cuenta con alojamiento para grupos del interior. 
-
-          </p> 
+             <p> 
+                 By rock mystic, high-fi technology, family epic and economic policy, DDR Recordings means a before and after in the electrifying story of the southern suburbs of “Gran Buenos Aires”, reaffirming the importance of this piece of earth on the world map music.
+                Located in a charming corner on the border between Marmol and Adrogué, DDR Recordings has everything a recording studio needs for a group to have a proper sound, and more: a spacious living room and spectacular acoustic levitated, an impressive console 1608 API surrounded by a selection of processors and first-line and outdoors and indoors places where musicians can relax and reload.
+                Dreamed and powered by Barbara Zampini, after several years of developing, design and built, it goes out to the arena with an air of providentially landed spacecraft. The responsible person for setting up and management is Marcelo Belen, experienced and recognized drum tech and recording engineer, as well as legendary drummer of the southern postpunk.
+            </p>  
+            </div>
             
-         <p> 
-             By rock mystic, high-fi technology, family epic and economic policy, DDR Recordings means a before and after in the electrifying story of the southern suburbs of “Gran Buenos Aires”, reaffirming the importance of this piece of earth on the world map music.
-            Located in a charming corner on the border between Marmol and Adrogué, DDR Recordings has everything a recording studio needs for a group to have a proper sound, and more: a spacious living room and spectacular acoustic levitated, an impressive console 1608 API surrounded by a selection of processors and first-line and outdoors and indoors places where musicians can relax and reload.
-            Dreamed and powered by Barbara Zampini, after several years of developing, design and built, it goes out to the arena with an air of providentially landed spacecraft. The responsible person for setting up and management is Marcelo Belen, experienced and recognized drum tech and recording engineer, as well as legendary drummer of the southern postpunk.
-        </p>  
-        </div>
-        
-    </main>
-
-    <footer>
-        <ul>
-          <li>
-            <a
-              href="https://www.facebook.com/ddrecordingsofficialpage/"
-              target="_blank"> <img src="../img/facebook.png" alt="facebook"></a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/ddr_recordings_oficial/"
-              target="_blank"> <img src="../img/instagram.png" alt="instagram"></a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/channel/UCu1qpUVNqnsVKwFXTpV56vQ"
-              target="_blank"> <img src="../img/youtube.png" alt="youtube"> </a>
-          </li>
-        </ul>
-
-        <h6>
-            ©Todos los derechos reservados
-        </h6>
-        <h6>
-             Pagina web desarrollada por Lucas González
-        </h6>
-    </footer>
+        </main>
+    
+        <footer>
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/ddrecordingsofficialpage/"
+                  target="_blank"> <img src="../img/facebook.png" alt="facebook"></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/ddr_recordings_oficial/"
+                  target="_blank"> <img src="../img/instagram.png" alt="instagram"></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCu1qpUVNqnsVKwFXTpV56vQ"
+                  target="_blank"> <img src="../img/youtube.png" alt="youtube"> </a>
+              </li>
+            </ul>
+              <h3 class="derechos">
+                  ©Todos los derechos reservados
+              </h3>
+        </footer>
+    </div class="contenedor">
+      
+    <!-- Link de js de bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
