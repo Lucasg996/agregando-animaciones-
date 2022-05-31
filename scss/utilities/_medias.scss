@@ -1,0 +1,56 @@
+@media screen and (max-width: 600px){
+    
+    footer{
+        ul{
+            li{
+                padding: 2px;
+                a{
+                    .redes{
+                        width: 45%;
+                    }
+                }
+            }
+        }
+        .derechos{
+            display: none;
+        }
+    }
+
+}
+@media screen and (max-width: 700px){
+footer{
+    ul{
+        li{
+            a{
+                .redes{
+                    width: 40%;
+
+                }
+            }
+        }
+    }
+}
+
+}
+
+@media screen and (max-width: 500px){
+footer{
+    ul{
+        li{
+            a{
+                .redes{
+                     width:200%;
+                }
+            }
+        }
+    }
+}
+
+.main-fotos{
+    h2{
+        font-size:1rem;
+        margin-left: 40px;
+
+    }
+}   
+}

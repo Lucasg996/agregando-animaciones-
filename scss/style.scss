@@ -1,0 +1,138 @@
+//imports
+@import "utilities/variables";
+@import "utilities/medias";
+
+//reset
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+// div contenedor index
+.contenedor{
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header header header header "
+                          "main main main main"
+                          "footer footer footer footer ";
+}
+//body
+body{
+    background-color: $color-principal;
+}
+
+//header
+header {
+    grid-area: header; 
+    background-color:$color-principal; 
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    width: 100%;
+        .nav-menu{
+            background-color: $color-principal;
+            width: 100%;
+        .container{  
+            display:flex;
+            align-items: start;
+
+          h1{  
+                 color:#88862f;
+                 font-size: 3rem;
+                 font-family: 'Bebas Neue', cursive;
+
+                 &:hover{
+                     color:black
+                 }
+                }
+              
+        .nav-div{
+            .nav-ul{
+                display:flex ;
+                justify-content: flex-end;
+                .nav-li{
+                    font-size: 1rem;
+                    padding: 10px 10px 0px 10px;
+                    margin: 10px 20px 0px 20px;
+                    font-family: 'Rubik', sans-serif;
+                    a{
+                        color: $color-secundario;
+                        &:hover{
+                            color: rgb(122, 114, 114)
+                        }
+                    }                
+                }
+            }
+        }
+    }
+}   
+}
+
+//main
+main{
+grid-area: main;
+.carousel-slide{
+    .div-carrousel{
+        .div-carousel{
+            .img-carrousel{
+                height: 100%;
+                width:100%;
+              }
+              
+        }
+    }
+}
+}
+//footer
+footer{
+    grid-area: footer;
+    margin: 20px;
+    padding: 10px;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        li{
+            list-style-type: none;
+             margin: 30px;
+             padding: 20px;
+              font-family: 'Rubik', sans-serif;
+              a{
+                display: flex;
+                justify-content: space-around;
+                  img{
+                    width: 12%;
+                  }
+              }
+        }
+    }
+    .derechos{
+        font-size: 0.8rem;
+        color:$color-secundario;
+        padding: 20px 10px 10px 1px;    
+        font-family: 'Rubik', sans-serif;
+    }
+}
+
+//sobre nosotros
+main{
+    .div-logo{
+        margin: 20px;
+        padding: 10px;
+    }
+    .nosotros{
+        color:$color-secundario;
+        margin: 20px;
+        padding: 20px 10px 10px 1px ; 
+        font-size: 1.4rem;
+        font-family: 'Rubik', sans-serif;
+    }
+    .div-nosotros{
+        p{
+            font-size: 0.9rem;
+            color: black;
+            font-family: 'Rubik', sans-serif;
+            margin: 1rem;
+    }
+}
+}
