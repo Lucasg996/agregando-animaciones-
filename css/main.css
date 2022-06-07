@@ -1,18 +1,18 @@
+main form fieldset div .submit, .main-fotos .card .card-body .boton {
+  background-color: black;
+  color: whitesmoke;
+  font-family: "Rubik", sans-serif; }
+
 @media screen and (max-width: 600px) {
-  footer ul li {
-    padding: 2px; }
-    footer ul li a .redes {
-      width: 45%; }
+  footer ul {
+    display: flex;
+    justify-content: center; }
+    footer ul li {
+      padding: 2px; }
+      footer ul li a img {
+        width: 50px; }
   footer .derechos {
-    display: none; } }
-
-@media screen and (max-width: 700px) {
-  footer ul li a .redes {
-    width: 40%; } }
-
-@media screen and (max-width: 500px) {
-  footer ul li a .redes {
-    width: 200%; }
+    display: none; }
   .main-fotos h2 {
     font-size: 1rem;
     margin-left: 40px; } }
@@ -41,26 +41,26 @@ header {
   header .nav-menu {
     background-color: whitesmoke;
     width: 100%; }
-    header .nav-menu .container {
+    header .nav-menu .container-fluid {
       display: flex;
       align-items: start; }
-      header .nav-menu .container h1 {
+      header .nav-menu .container-fluid h1 {
         color: #88862f;
         font-size: 3rem;
-        font-family: 'Bebas Neue', cursive; }
-        header .nav-menu .container h1:hover {
+        font-family: "Bebas Neue", cursive; }
+        header .nav-menu .container-fluid h1:hover {
           color: black; }
-      header .nav-menu .container .nav-div .nav-ul {
+      header .nav-menu .container-fluid .nav-div .nav-ul {
         display: flex;
         justify-content: flex-end; }
-        header .nav-menu .container .nav-div .nav-ul .nav-li {
+        header .nav-menu .container-fluid .nav-div .nav-ul .nav-li {
           font-size: 1rem;
           padding: 10px 10px 0px 10px;
           margin: 10px 20px 0px 20px;
           font-family: 'Rubik', sans-serif; }
-          header .nav-menu .container .nav-div .nav-ul .nav-li a {
+          header .nav-menu .container-fluid .nav-div .nav-ul .nav-li a {
             color: black; }
-            header .nav-menu .container .nav-div .nav-ul .nav-li a:hover {
+            header .nav-menu .container-fluid .nav-div .nav-ul .nav-li a:hover {
               color: #7a7272; }
 
 main {
@@ -75,17 +75,15 @@ footer {
   padding: 10px; }
   footer ul {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
     footer ul li {
       list-style-type: none;
-      margin: 30px;
-      padding: 20px;
+      margin: 10px;
+      padding: 8px;
       font-family: 'Rubik', sans-serif; }
-      footer ul li a {
-        display: flex;
-        justify-content: space-around; }
-        footer ul li a img {
-          width: 12%; }
+      footer ul li a img {
+        width: 70px; }
   footer .derechos {
     font-size: 0.8rem;
     color: black;
@@ -108,3 +106,64 @@ main .div-nosotros p {
   color: black;
   font-family: 'Rubik', sans-serif;
   margin: 1rem; }
+
+.main-equipamiento {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .main-equipamiento .titulo-equipamiento {
+    color: black;
+    font-size: 1.4rem;
+    font-family: "Rubik", sans-serif;
+    margin-top: 50px;
+    margin-bottom: 20px; }
+  .main-equipamiento .h-equipamiento {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 1.4rem;
+    font-family: "Rubik", sans-serif; }
+  .main-equipamiento .ul-equipamiento li {
+    list-style-type: none;
+    font-size: 0.9rem;
+    color: black;
+    font-family: "Rubik", sans-serif; }
+  .main-equipamiento p {
+    font-size: 0.9rem;
+    color: black;
+    font-family: "Rubik", sans-serif;
+    margin: 1rem; }
+
+main .titulo-form {
+  color: black;
+  margin: 20px;
+  padding: 20px 10px 10px 1px;
+  font-size: 1.4rem;
+  font-family: "Rubik", sans-serif;
+  text-align: center; }
+
+main form {
+  display: flex;
+  justify-content: center; }
+  main form fieldset legend {
+    margin: 20px;
+    padding: 20px;
+    color: black;
+    font-size: 1.2rem;
+    font-family: "Rubik", sans-serif;
+    text-align: center; }
+  main form fieldset div {
+    margin: 20px;
+    color: whitesmoke; }
+    main form fieldset div label {
+      font-size: 1rem;
+      color: black;
+      font-family: "Rubik", sans-serif;
+      padding: 20px; }
+    main form fieldset div input {
+      margin: 10px; }
+  main form fieldset div .submit {
+    width: 20%; }
+
+.main-fotos .card {
+  margin: 20px; }
