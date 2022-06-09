@@ -149,6 +149,8 @@ main .titulo-form {
   text-shadow: 1px 1px 1px #85830a; }
 
 main form {
+  margin-left: 60px;
+  width: 90%;
   display: flex;
   justify-content: center;
   border: 2px solid black; }

@@ -213,7 +213,9 @@ main{
 
     }
 
-    form{       
+    form{
+        margin-left: 60px;
+        width: 90%;
         @include flex(flex, center);
         border: 2px solid black;
         fieldset{   
