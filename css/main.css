@@ -1,7 +1,8 @@
 main form fieldset div .submit, .main-fotos .card .card-body .boton {
   background-color: black;
   color: whitesmoke;
-  font-family: "Rubik", sans-serif; }
+  font-family: "Rubik", sans-serif;
+  border: solid 1px #85830a; }
 
 @media screen and (max-width: 600px) {
   footer ul {
@@ -45,9 +46,10 @@ header {
       display: flex;
       align-items: start; }
       header .nav-menu .container-fluid h1 {
-        color: #88862f;
+        color: #85830a;
         font-size: 3rem;
-        font-family: "Bebas Neue", cursive; }
+        font-family: "Bebas Neue", cursive;
+        text-shadow: 1px 1px 1px black; }
         header .nav-menu .container-fluid h1:hover {
           color: black; }
       header .nav-menu .container-fluid .nav-div .nav-ul {
@@ -99,7 +101,8 @@ main .nosotros {
   margin: 20px;
   padding: 20px 10px 10px 1px;
   font-size: 1.4rem;
-  font-family: 'Rubik', sans-serif; }
+  font-family: 'Rubik', sans-serif;
+  text-shadow: 1px 1px 1px #85830a; }
 
 main .div-nosotros p {
   font-size: 0.9rem;
@@ -116,13 +119,15 @@ main .div-nosotros p {
     font-size: 1.4rem;
     font-family: "Rubik", sans-serif;
     margin-top: 50px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px #85830a; }
   .main-equipamiento .h-equipamiento {
     margin-top: 20px;
     margin-bottom: 20px;
     color: black;
     font-size: 1.4rem;
-    font-family: "Rubik", sans-serif; }
+    font-family: "Rubik", sans-serif;
+    text-shadow: 1px 1px 1px #85830a; }
   .main-equipamiento .ul-equipamiento li {
     list-style-type: none;
     font-size: 0.9rem;
@@ -140,11 +145,13 @@ main .titulo-form {
   padding: 20px 10px 10px 1px;
   font-size: 1.4rem;
   font-family: "Rubik", sans-serif;
-  text-align: center; }
+  text-align: center;
+  text-shadow: 1px 1px 1px #85830a; }
 
 main form {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  border: 2px solid black; }
   main form fieldset legend {
     margin: 20px;
     padding: 20px;
@@ -160,10 +167,29 @@ main form {
       color: black;
       font-family: "Rubik", sans-serif;
       padding: 20px; }
-    main form fieldset div input {
-      margin: 10px; }
+  main form fieldset div .mensaje {
+    height: 150px;
+    padding: 1.5em;
+    border: 1px solid black; }
   main form fieldset div .submit {
-    width: 20%; }
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px; }
 
-.main-fotos .card {
-  margin: 20px; }
+.main-fotos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .main-fotos .card {
+    margin: 20px; }
+    .main-fotos .card .card-body .card-title {
+      font-size: 1.8rem;
+      font-family: "Rubik", sans-serif;
+      color: black;
+      text-shadow: 1px 1px 1px #85830a; }
+    .main-fotos .card .card-body p {
+      font-family: "Rubik", sans-serif;
+      font-size: 1rem; }
+    .main-fotos .card .card-body .boton {
+      padding: 10px; }

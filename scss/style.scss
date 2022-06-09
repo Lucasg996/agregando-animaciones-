@@ -43,9 +43,10 @@ header {
                 @include flex-dos(flex, start);
 
           h1{  
-                 color:#88862f;
+                 color:$color-complementario;
                  font-size: 3rem;
                  font-family: $fuente-secundaria;
+                 text-shadow: 1px 1px 1px $color-secundario;
 
                  &:hover{
                      color:black
@@ -142,6 +143,7 @@ main{
         padding: 20px 10px 10px 1px ; 
         font-size: 1.4rem;
         font-family: 'Rubik', sans-serif;
+        text-shadow: 1px 1px 1px $color-complementario ;
     }
 
     .div-nosotros{
@@ -167,6 +169,8 @@ main{
         font-family: $fuente-principal;
         margin-top: 50px;
         margin-bottom: 20px;
+        text-shadow: 1px 1px 1px $color-complementario ;
+
     }
     .h-equipamiento{
         margin-top: 20px;
@@ -174,6 +178,8 @@ main{
         color:$color-secundario;
         font-size: $medida-principal;
         font-family: $fuente-principal;
+        text-shadow: 1px 1px 1px $color-complementario ;
+
     }
     .ul-equipamiento{
 
@@ -203,11 +209,13 @@ main{
         font-size: $medida-principal;
         font-family: $fuente-principal;
         text-align: center;
+        text-shadow: 1px 1px 1px $color-complementario ;
+
     }
 
-    form{
+    form{       
         @include flex(flex, center);
-        
+        border: 2px solid black;
         fieldset{   
 
             legend{
@@ -230,16 +238,23 @@ main{
                     padding: 20px;
 
                 }
-                input{
-                    margin: 10px;
-                }
 
+            }
+            div{
+                .mensaje{
+                    height: 150px;
+                    padding: 1.5em;
+                    border: 1px solid black;
+                }
             }
 
             div{
                 .submit{
                     @extend %botones;
                     width: 20%;
+                    padding: 10px;
+                    margin: 10px;
+                    border-radius: 5px;
                 }
             }
 
@@ -249,11 +264,24 @@ main{
 
 //discos grabados
 .main-fotos{
+    @include flex(flex, space-evenly);
+    flex-wrap: wrap;
          .card{
              margin: $margin-principal;
              .card-body{
+                 .card-title{
+                     font-size: 1.8rem;
+                     font-family: $fuente-principal;
+                     color: $color-secundario;
+                     text-shadow: 1px 1px 1px $color-complementario;
+                 }
+                 p{
+                     font-family: $fuente-principal;
+                     font-size: 1rem;
+                 }
                  .boton{
                     @extend %botones;
+                    padding: 10px;
                  }
              }
          }
