@@ -1,34 +1,31 @@
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 410px){
     
-    footer{
-
-        ul{
-            display: flex;
-            justify-content: center;
-
-            li{
-                padding: 2px;
-
-                a{
-                    img{
-                        width: 50px;
-                    }
-                }
-    
-            }
-        }
+ 
         .derechos{
             display: none;
         }
     }
+    @media screen and (max-width: 501px) and (min-width: 464px){
 
-.main-fotos{
+        form{
+            fieldset{
+                div{ @include flex-dos(flex,flex-start)
+                }
+            }
+
+            }
+        }
     
-    h2{
-        font-size:1rem;
-        margin-left: 40px;
 
+
+@media screen and (min-width: 410px){
+
+footer{
+    ul{
+        background-color: $color-complementario;
+        background-color: $color-complementario;
     }
-}   
+
+}
 }

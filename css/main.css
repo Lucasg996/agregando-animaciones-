@@ -4,19 +4,19 @@ main form fieldset div .submit, .main-fotos .card .card-body .boton {
   font-family: "Rubik", sans-serif;
   border: solid 1px #85830a; }
 
-@media screen and (max-width: 600px) {
-  footer ul {
+@media screen and (max-width: 410px) {
+  .derechos {
+    display: none; } }
+
+@media screen and (max-width: 501px) and (min-width: 464px) {
+  form fieldset div {
     display: flex;
-    justify-content: center; }
-    footer ul li {
-      padding: 2px; }
-      footer ul li a img {
-        width: 50px; }
-  footer .derechos {
-    display: none; }
-  .main-fotos h2 {
-    font-size: 1rem;
-    margin-left: 40px; } }
+    align-items: flex-start; } }
+
+@media screen and (min-width: 410px) {
+  footer ul {
+    background-color: #85830a;
+    background-color: #85830a; } }
 
 * {
   margin: 0;
@@ -90,7 +90,8 @@ footer {
     font-size: 0.8rem;
     color: black;
     padding: 20px 10px 10px 1px;
-    font-family: 'Rubik', sans-serif; }
+    font-family: 'Rubik', sans-serif;
+    text-align: center; }
 
 main .div-logo {
   margin: 20px;
@@ -103,6 +104,10 @@ main .nosotros {
   font-size: 1.4rem;
   font-family: 'Rubik', sans-serif;
   text-shadow: 1px 1px 1px #85830a; }
+
+main .div-nosotros .p-nosotros {
+  border-bottom: 2px solid black;
+  padding-bottom: 1rem; }
 
 main .div-nosotros p {
   font-size: 0.9rem;
@@ -132,7 +137,9 @@ main .div-nosotros p {
     list-style-type: none;
     font-size: 0.9rem;
     color: black;
-    font-family: "Rubik", sans-serif; }
+    font-family: "Rubik", sans-serif;
+    border: 1px solid black;
+    padding: 10px; }
   .main-equipamiento p {
     font-size: 0.9rem;
     color: black;
@@ -149,7 +156,7 @@ main .titulo-form {
   text-shadow: 1px 1px 1px #85830a; }
 
 main form {
-  margin-left: 60px;
+  margin: auto;
   width: 90%;
   display: flex;
   justify-content: center;
@@ -174,7 +181,7 @@ main form {
     padding: 1.5em;
     border: 1px solid black; }
   main form fieldset div .submit {
-    width: 20%;
+    width: 40%;
     padding: 10px;
     margin: 10px;
     border-radius: 5px; }
