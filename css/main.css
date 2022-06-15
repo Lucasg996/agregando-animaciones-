@@ -4,10 +4,6 @@ main form fieldset div .submit, .main-fotos .card .card-body .boton {
   font-family: "Rubik", sans-serif;
   border: solid 1px #85830a; }
 
-@media screen and (max-width: 410px) {
-  .derechos {
-    display: none; } }
-
 @media screen and (max-width: 501px) and (min-width: 464px) {
   form fieldset div {
     display: flex;
@@ -20,7 +16,7 @@ main form fieldset div .submit, .main-fotos .card .card-body .boton {
 
 .contenedor {
   display: grid;
-  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "header header header header " "main main main main" "footer footer footer footer "; }
 
@@ -42,7 +38,7 @@ header {
       align-items: start; }
       header .nav-menu .container-fluid h1 {
         color: #85830a;
-        font-size: 3rem;
+        font-size: 3.5rem;
         font-family: "Bebas Neue", cursive;
         text-shadow: 1px 1px 1px black; }
         header .nav-menu .container-fluid h1:hover {
