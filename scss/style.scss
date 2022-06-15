@@ -15,11 +15,12 @@
 // div contenedor index
 .contenedor{
     display: grid;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "header header header header "
                           "main main main main"
                           "footer footer footer footer ";
+                          
 }
 //body
 body{
@@ -100,13 +101,14 @@ grid-area: main;
 //footer
 footer{
     grid-area: footer;
-    margin:$margin-principal;
-    padding: 10px;
 
+    
+    
 
     ul{
          @include flex(flex, space-evenly);
-        flex-wrap: wrap;    
+         flex-wrap: wrap;   
+         background-color: $color-complementario; 
    
         li{
             list-style-type: none;
@@ -116,7 +118,7 @@ footer{
               a{
                 
                 img{
-                    width: 70px;
+                    width: 55px;
                   }
               }
         }
@@ -166,7 +168,7 @@ main{
 }
 
 //equipamiento
-
+  
 .main-equipamiento{
 @include flex-dos(flex, center);
     flex-direction: column;
@@ -176,7 +178,7 @@ main{
         font-size: $medida-principal;
         font-family: $fuente-principal;
         margin-top: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         text-shadow: 1px 1px 1px $color-complementario ;
 
     }
